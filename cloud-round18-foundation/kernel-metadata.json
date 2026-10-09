@@ -1,0 +1,13 @@
+{
+  "id": "woshiliudada/airline-s6e10-foundation-resource-round18",
+  "title": "Airline S6E10 full context foundation resource probe",
+  "code_file": "resource_probe.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": ["playground-series-s6e10"],
+  "kernel_sources": []
+}

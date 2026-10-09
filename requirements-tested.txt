@@ -1,0 +1,7 @@
+kaggle==2.2.4
+pandas==3.0.1
+numpy==2.3.5
+scikit-learn==1.9.1
+catboost==1.2.10
+lightgbm==4.7.0
+xgboost==3.4.1

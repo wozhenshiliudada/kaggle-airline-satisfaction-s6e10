@@ -1,0 +1,14 @@
+{
+  "id": "woshiliudada/airline-s6e10-cloud-access-round27",
+  "title": "Airline S6E10 Cloud Access Round27",
+  "code_file": "cloud_access_probe.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "machine_shape": "NvidiaL4",
+  "dataset_sources": [],
+  "competition_sources": ["playground-series-s6e10"],
+  "kernel_sources": []
+}

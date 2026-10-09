@@ -1,0 +1,9 @@
+{
+  "competition": "playground-series-s6e10",
+  "path": "outputs-round13/submission.csv",
+  "sha256": "b3451e0310cf0892ebd89cab80f400a5c0fe7fe3725ff93965e0499bf9225f93",
+  "submission_ref": 56857129,
+  "public_score": "0.96132",
+  "official_checked_at_utc": "2026-10-05T16:44:25.620964+00:00",
+  "note": "Historical best submission receipt; prediction CSV is not distributed."
+}

@@ -1,0 +1,53 @@
+# Local environments and generated runtime files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+logs/
+*.log
+
+# Competition inputs, model caches and individual predictions
+data*/
+outputs*/
+experiments/
+references/
+third_party/
+evidence/
+smoke-data/
+smoke-output/
+cloud/
+*.csv
+*.parquet
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.joblib
+*.cbm
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.zip
+
+# Credentials, account state and private screenshots
+.env
+.env.*
+!.env.example
+kaggle.json
+access_token
+auth.json
+credentials.json
+run-state.json
+last-submission.json
+team-request.json
+kaggle-results.json
+*.pem
+*.key
+*.jpg
+*.jpeg
+*.png
+
+# Local publication/verification receipts
+publication/

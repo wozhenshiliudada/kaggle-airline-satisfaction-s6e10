@@ -1,0 +1,23 @@
+{
+  "checked_on": "2026-10-09",
+  "scope": "source export and CPU baseline; no full competition retraining",
+  "python_syntax_files": 97,
+  "python_syntax_passed": true,
+  "copied_source_fingerprints_checked": 122,
+  "copied_source_fingerprints_match": true,
+  "first_party_imports_present": true,
+  "primary_document_links_present": true,
+  "credential_pattern_scan_passed": true,
+  "best_local_submission_sha256_matches_historical_receipt": true,
+  "synthetic_smoke_test": {
+    "passed": true,
+    "real_models_run": ["CatBoost", "LightGBM"],
+    "folds": 2,
+    "train_rows": 700,
+    "test_rows": 200,
+    "checks": ["OOF coverage", "unseen categories", "missing values", "ID alignment", "invalid submission rejection"],
+    "competition_score": false
+  },
+  "historical_best_public_auc": "0.96132",
+  "historical_best_submission_ref": 56857129
+}
