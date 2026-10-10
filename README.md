@@ -2,7 +2,7 @@
 
 这个项目记录我们从树模型基线、公开原始数据教师、辅助任务与表格神经网络，到融合、排除验证、TabICL 微调的实验过程。
 
-**已取得的最佳公开 ROC-AUC：0.96132。** 最佳为第十三轮十折航程辅助 RealMLP 替换方案，官方提交编号 `56857129`。截至整理时，13 次历史官方提交已评分；本地 OOF、开发验证、历史公榜和未成功的试验分别记录。
+**已取得的最佳公开 ROC-AUC：0.96133。** 最新最佳为第28轮保留原生折覆盖的排序融合，官方提交编号 `57031572`。2026-10-10查分快照为313 / 1354；账号已评分19次，本轮新增1次。第29轮另完成20个新模型训练，未通过预定筛选。本地验证与官方成绩分别记录。
 
 比赛：[Playground Series S6E10](https://www.kaggle.com/competitions/playground-series-s6e10)
 
@@ -13,6 +13,7 @@
 - [docs/HISTORICAL_README.md：历史运行顺序和逐轮记录](docs/HISTORICAL_README.md)
 - [TENFOLD_OPTIMIZATION.md：最佳第十三轮](TENFOLD_OPTIMIZATION.md)
 - [ROUND23_25_RESULTS.md：TabICL 实际微调结果及推理一致性检查](ROUND23_25_RESULTS.md)
+- **[ROUND28_29_RESULTS.md：最新公榜提升、20个模型重训与验证修订](ROUND28_29_RESULTS.md)**
 
 ## 本仓库包含什么
 
@@ -62,7 +63,7 @@ Windows 上如果官方 SDK 出现特定 TLS 连接问题，可以使用随仓�
 
 `requirements-tested.txt` 和 `requirements-nn-tested.txt` 保存原机器实际使用的部分版本，包含特定 CUDA 构建信息；它们不是所有平台都能直接安装的统一锁文件。
 
-GPU 与神经网络的历史安装步骤、前序缓存生成及运行顺序见 [历史运行文档](docs/HISTORICAL_README.md)。TabICL 高级试验另需对应依赖和预训练权重；这些未打包。最佳预测依赖完整的前序模型链，仓库不声称一条命令或仅运行 `round13_tenfold.py` 就能得到 0.96132。
+GPU 与神经网络的历史安装步骤、前序缓存生成及运行顺序见 [历史运行文档](docs/HISTORICAL_README.md)。TabICL 高级试验另需对应依赖和预训练权重；这些未打包。最新最佳仍依赖完整前序模型链和历史预测；仅运行某个高级脚本不能从零复现最佳成绩。第28/29轮脚本和冻结协议用于原工作区的续跑，新工作区应先生成前序缓存。
 
 ## 主要文件
 
@@ -77,6 +78,8 @@ GPU 与神经网络的历史安装步骤、前序缓存生成及运行顺序见 
 | `round18_foundation_*.py` | TabICL 资源与完整开发上下文试验 |
 | `round23_finetune.py` / `round24_finetune_features.py` / `round25_finetune_routes.py` | 三组 TabICL 微调 |
 | `round26_consistency.py` | 冷加载、种子和缓存一致性检查 |
+| `round28_native_fusion.py` / `round29_matched_context.py` | 原生覆盖融合及两条件分支的十折重训 |
+| `verify_round28_29.py` / `submit_round28_29.py` | 最终文件重建、官方SDK提交及查分对账 |
 
 ## 已知限制
 
@@ -85,3 +88,5 @@ GPU 与神经网络的历史安装步骤、前序缓存生成及运行顺序见 
 首次发布前，97 个 Python 文件通过语法检查，122 个导出源文件与原文件指纹一致，合成数据 CPU 基线的真实训练与提交格式检查通过。此检查没有重新训练全部比赛模型。[发布验证记录](docs/PUBLICATION_VALIDATION.json)
 
 模型、方法和公开资源来源在 [SOURCES.md](SOURCES.md) 中列出。没有导入其他参赛者的预测来作为本项目的模型结果，也没有将第三方库或模型权重打包进仓库。
+
+本轮更新验证了20个真实模型训练任务、候选逐行预测重建和官方提交57031572的评分回执。完整说明见[第28—29轮报告](ROUND28_29_RESULTS.md)，摘要审计见[本轮发布验证记录](docs/ROUND28_29_VALIDATION.json)。

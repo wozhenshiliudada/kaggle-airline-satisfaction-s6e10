@@ -1,0 +1,25 @@
+{
+  "updated_at_utc": "2026-10-10T05:00:07.716644+00:00",
+  "new_source_manifest_sha256": {
+    "round28_native_fusion.py": "8493b5a69790d7084ef64e91c3bd0fb10491e86569142bb7bd5524793908f510",
+    "round29_matched_context.py": "6afd6853684c027368bf207e629437289182bf0f4e30dfd34df15a80b6e72448",
+    "verify_round28_29.py": "9edaf02ab49ccb08eb06f144c71d4d79ea3fe05d5b6134dc4361e920c5d6d723",
+    "submit_round28_29.py": "b6ac665c5262b686a438d42e543cd5324481613a385dd1b941910d10381028db",
+    "ROUND28_29_RESULTS.md": "9420934fbb2c1e7eef6279f72b88778d06511eea822917096c34b87e83eebe71",
+    "METHODS.md": "7fd59e820201a27adf7a49a10c0b8d32bf34e1bfc8b86df0f3d25d0fe49af9aa"
+  },
+  "source_copy_fingerprints_match": true,
+  "new_python_files": 4,
+  "total_python_syntax_checks": 101,
+  "credential_literal_scan": "PASS",
+  "fresh_model_fits": 20,
+  "new_fit_outer_labels_excluded_from_selection": true,
+  "first_fold_target_feature_label_invariance": "PASS for both new members; not repeated for the other folds",
+  "candidate_submission_rows": 299844,
+  "candidate_oof_reconstruction_max_error": 1.1102230246251565e-16,
+  "candidate_test_reconstruction_max_error": 1.1102230246251565e-16,
+  "official_submission_ref": 57031572,
+  "official_public_score": "0.96133",
+  "official_best_improved": true,
+  "limitations": "Historical labels and OOF have been reused; meta CV and leave-block selection are not nested. Only two newly fitted members share ten folds. Single public improvement of 0.00001 does not establish stable/private gains. No full best-model retraining from a clean checkout was attempted."
+}
