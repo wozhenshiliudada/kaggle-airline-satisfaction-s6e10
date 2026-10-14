@@ -1,5 +1,6 @@
 # 优化的公开来源
 
+**Built with PriorLabs-TabPFN**（第35/36轮使用许可不同的旧版TabPFN2.0；未使用3.5权重。）
 公开 Notebook 仅用于阅读思路，公开数据和许可明确的软件包用于实际训练。模型在本机重新训练，未下载他人的预测结果，也未执行公开 Notebook 代码。
 
 - 比赛 [官方数据说明](https://www.kaggle.com/competitions/playground-series-s6e10/data) 引用的 [原始数据](https://www.kaggle.com/datasets/arseniyshutko/binary-aviation-satisfaction-129k)，下载时官方 API 显示许可证为 CC0-1.0。
@@ -31,3 +32,9 @@
 第十四、十五轮继续在线阅读 GitHub 同题方案、TabM/数值嵌入论文及航空满意度研究。只独立检验算法思路与现有包配置：TabM 独立批次、航程高分辨率分箱、均匀/正态排序尺度融合，以及保持原树参数的十折覆盖率。前一阶段三个方向未通过完整筛选；后续十折树另行固定规则。没有复制缺少许可的源码，没有下载或使用其他参赛者的预测、外部 TabPFN 结果或新预训练权重。
 
 本次来源的具体取舍、失败、适用边界和复现入口见 [RESEARCH_OPTIMIZATION.md](RESEARCH_OPTIMIZATION.md)，GitHub 文件 blob 指纹见 `evidence/round14-source-audit.json`。同题仓库的自报分数、所谓理论上限和“nested CV”没有在本项目独立验证；航空研究使用不同调查数据与目标，不能用其分数直接比较本比赛。
+
+## 2026-10-14云端试验补充来源
+
+- [TabPFN2官方权重与模型卡](https://huggingface.co/Prior-Labs/TabPFN-v2-clf)：固定revision f851f2a3c941544733b712d8c0f96dfae9b28862；完整许可副本[Prior Labs License1.1](docs/TABPFN2_LICENSE.txt)，个人使用许可与3.5不同。
+- [TabPFN官方代码](https://github.com/PriorLabs/TabPFN)：使用PyPI9.2.0的Apache2.0代码，显式选择ModelVersion.V2与已校验本地2.0权重。Python包版本与模型版本不同。
+- 官方模型、依赖SHA256和实际GPU运行指标见[审计摘要](docs/CLOUD_GPU_VALIDATION.json)。没有读取其他参赛者逐行预测。

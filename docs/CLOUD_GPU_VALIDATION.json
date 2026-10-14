@@ -1,0 +1,446 @@
+{
+  "date": "2026-10-14",
+  "attribution": "Built with PriorLabs-TabPFN",
+  "sources": [
+    {
+      "path": "cloud-round30-offline/gpu_probe.py",
+      "original_workspace_sha256": "0a00bd64881af74b8d751a6773f982746baf0a1f7e8e01188ab964443417e30d",
+      "public_canonical_lf_sha256": "0a00bd64881af74b8d751a6773f982746baf0a1f7e8e01188ab964443417e30d"
+    },
+    {
+      "path": "cloud-round31-full-context/full_context.py",
+      "original_workspace_sha256": "ad2d022b93269f848f113a0dc6366c9918c975b9a4f54c632405b7e7d9442e70",
+      "public_canonical_lf_sha256": "ad2d022b93269f848f113a0dc6366c9918c975b9a4f54c632405b7e7d9442e70"
+    },
+    {
+      "path": "cloud-round32-full-raw/full_context.py",
+      "original_workspace_sha256": "758ab9dbd10144bad183ab1207508024edf24fe444bddd82572ded8e8878a99b",
+      "public_canonical_lf_sha256": "758ab9dbd10144bad183ab1207508024edf24fe444bddd82572ded8e8878a99b"
+    },
+    {
+      "path": "cloud-round34-recover-none/full_context.py",
+      "original_workspace_sha256": "c572972a681729dd59da222abd4f86dccce885abaa0c8154e99f91fb5cf71ded",
+      "public_canonical_lf_sha256": "8757d9a50a886923c116041a0d8044969a3c3868768df63018a2a48abfce13a3"
+    },
+    {
+      "path": "cloud-round35-tabpfn2/tabpfn2_pilot.py",
+      "original_workspace_sha256": "133b11587c11be165dd25e6d104b41bcdba62dcdd727d1cb562a2f9037ee7069",
+      "public_canonical_lf_sha256": "f8cfdd06d45e8fdc114b97c6529077b1070a301df7e0a186d453c538475a5d46"
+    },
+    {
+      "path": "cloud-round36-tabpfn2-fixed/tabpfn2_pilot.py",
+      "original_workspace_sha256": "376b434503e1c2c0358a7aa15403628d2792f6f351aced768f98ed874603ca04",
+      "public_canonical_lf_sha256": "376b434503e1c2c0358a7aa15403628d2792f6f351aced768f98ed874603ca04"
+    },
+    {
+      "path": "score_cloud_context.py",
+      "original_workspace_sha256": "dea20e2e7f2032310b57784b5839d62f8b7e8479f4ac6d23fe7284e4480a9d74",
+      "public_canonical_lf_sha256": "21b6e1cdc3aaf60d0d2b456e71fa8d4c60f587b8b1fa254c9d31c44df8744876"
+    },
+    {
+      "path": "score_tabpfn2_cloud.py",
+      "original_workspace_sha256": "a19d8cdf73f66f6f4fec646511e0327dfa432bc4870679fc2ca19d62d551608b",
+      "public_canonical_lf_sha256": "6230f993c83efea91cd224f5c8d17e4531fa31beaf953812e44e61e9fa82cd27"
+    },
+    {
+      "path": "collect_cloud_context.py",
+      "original_workspace_sha256": "1cb401a831390e49221dc171bc91f9c7987e530f601b4cd929fe5b2b38449c50",
+      "public_canonical_lf_sha256": "0c59771364f997750575477fd8fb251ba4954fc5b8d6b17db4a572c067da373b"
+    },
+    {
+      "path": "watch_cloud_recovery.py",
+      "original_workspace_sha256": "516be890d9d029e8106b952b010f04330a494ad15aa1f0ebc6b3901ec2c531e5",
+      "public_canonical_lf_sha256": "01d5a03c54de1fc7099503757915413857a485bb1a77d33c3e3decd43232ed15"
+    },
+    {
+      "path": "kaggle_output_transport.py",
+      "original_workspace_sha256": "5d6b99a8b16f8f0d2aab5133f3bebae45af90895a986e823c12fe7da8bb8f5df",
+      "public_canonical_lf_sha256": "a017762b233c7f55725b491bfc6b8cde618feeea064c5dca454f65d8cbc74d6f"
+    },
+    {
+      "path": "CLOUD_GPU_TRIAL.md",
+      "original_workspace_sha256": "eeed6f406e29060eb9b54ffa347cda9725d6d56411bb0d7187d502e92683a0cb",
+      "public_canonical_lf_sha256": "9a0aea99e748a9a52a10c87b276365a5fd57cdb991831cf866014aa192528401"
+    }
+  ],
+  "round32": {
+    "round": 32,
+    "successful": true,
+    "cloud_full_context_completed": true,
+    "training_context_rows": 559708,
+    "validation_rows": 139927,
+    "total_members": 4,
+    "baseline_auc": 0.9619423802731576,
+    "combined_model_auc": 0.9577930559996459,
+    "arms": [
+      {
+        "norm": "none",
+        "single_arm_auc": 0.9576937821528603,
+        "peak_allocated_vram_gb": 13.230727168,
+        "peak_reserved_vram_gb": 14.72200704,
+        "fit_seconds": 188.742223071,
+        "total_seconds": 3010.3322831470005,
+        "candidate_eligible_on_its_own": false
+      },
+      {
+        "norm": "power",
+        "single_arm_auc": 0.957657448646504,
+        "peak_allocated_vram_gb": 13.230727168,
+        "peak_reserved_vram_gb": 14.72200704,
+        "fit_seconds": 169.35452184999997,
+        "total_seconds": 2918.8408100200004,
+        "candidate_eligible_on_its_own": false
+      }
+    ],
+    "probability_diversity_max_difference": 0.3575112223625183,
+    "blends": [
+      {
+        "weight": 0.025,
+        "auc": 0.9619389911627819,
+        "delta": -3.3891103756733543e-06,
+        "paired_fixed_prediction": {
+          "delta": -3.3891103756733543e-06,
+          "fixed_prediction_se": 4.327918026859674e-06,
+          "approx_95ci": [
+            -1.1871829708318315e-05,
+            5.093608956971607e-06
+          ],
+          "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+        }
+      },
+      {
+        "weight": 0.05,
+        "auc": 0.9619331735141615,
+        "delta": -9.20675899607204e-06,
+        "paired_fixed_prediction": {
+          "delta": -9.20675899607204e-06,
+          "fixed_prediction_se": 8.676618184433833e-06,
+          "approx_95ci": [
+            -2.6212930637562353e-05,
+            7.799412645418274e-06
+          ],
+          "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+        }
+      },
+      {
+        "weight": 0.1,
+        "auc": 0.9619110393828739,
+        "delta": -3.134089028367093e-05,
+        "paired_fixed_prediction": {
+          "delta": -3.134089028367093e-05,
+          "fixed_prediction_se": 1.747691338143595e-05,
+          "approx_95ci": [
+            -6.559564051128539e-05,
+            2.9138599439435323e-06
+          ],
+          "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+        }
+      }
+    ],
+    "continue_full_folds": false,
+    "eligible_weights": [],
+    "cloud_total_seconds": 3030.094703158,
+    "protocol_sha256": "294263c95a3d397299a6b5d1bfc9f186ac8fcbfcba11a03bedb6e4d4ce736f0f",
+    "official_submission_generated": false,
+    "official_submission_attempted": false,
+    "limitation": "Historical fold labels already researched; pilot validation is adaptive, not pristine or nested. A single-fold improvement cannot authorize a competition submission. This is TabICL, not the ineligible TabPFN3.5 full-context branch."
+  },
+  "round34": {
+    "round": 34,
+    "successful": true,
+    "cloud_full_context_completed": true,
+    "training_context_rows": 559708,
+    "validation_rows": 139927,
+    "total_members": 4,
+    "baseline_auc": 0.9619423802731576,
+    "combined_model_auc": 0.9583427759932837,
+    "arms": [
+      {
+        "norm": "none",
+        "single_arm_auc": 0.9583111220169087,
+        "peak_allocated_vram_gb": 13.246926848,
+        "peak_reserved_vram_gb": 15.334375424,
+        "fit_seconds": 161.60814547500001,
+        "total_seconds": 2806.9966267530003,
+        "candidate_eligible_on_its_own": false
+      },
+      {
+        "norm": "power",
+        "single_arm_auc": 0.9581392629984871,
+        "peak_allocated_vram_gb": 13.246926848,
+        "peak_reserved_vram_gb": 15.334375424,
+        "fit_seconds": 427.4250363080001,
+        "total_seconds": 2751.800182606,
+        "candidate_eligible_on_its_own": false
+      }
+    ],
+    "probability_diversity_max_difference": 0.4359447956085205,
+    "blends": [
+      {
+        "weight": 0.025,
+        "auc": 0.9619408448476486,
+        "delta": -1.5354255089583546e-06,
+        "paired_fixed_prediction": {
+          "delta": -1.5354255089583546e-06,
+          "fixed_prediction_se": 3.5553143606871e-06,
+          "approx_95ci": [
+            -8.50384165590507e-06,
+            5.432990637988361e-06
+          ],
+          "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+        }
+      },
+      {
+        "weight": 0.05,
+        "auc": 0.9619372239749319,
+        "delta": -5.156298225728051e-06,
+        "paired_fixed_prediction": {
+          "delta": -5.156298225728051e-06,
+          "fixed_prediction_se": 7.140567203863482e-06,
+          "approx_95ci": [
+            -1.9151809945300475e-05,
+            8.839213493844373e-06
+          ],
+          "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+        }
+      },
+      {
+        "weight": 0.1,
+        "auc": 0.9619236362868989,
+        "delta": -1.8743986258673573e-05,
+        "paired_fixed_prediction": {
+          "delta": -1.8743986258673573e-05,
+          "fixed_prediction_se": 1.447528217704169e-05,
+          "approx_95ci": [
+            -4.7115539325675284e-05,
+            9.627566808328139e-06
+          ],
+          "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+        }
+      }
+    ],
+    "continue_full_folds": false,
+    "eligible_weights": [],
+    "cloud_total_seconds": 2830.110041687,
+    "protocol_sha256": "1cac3dc1fba6a291a90d70eba9a3a63335a00cb877679fb62cee51932a16b0ac",
+    "official_submission_generated": false,
+    "official_submission_attempted": false,
+    "limitation": "Historical fold labels already researched; pilot validation is adaptive, not pristine or nested. A single-fold improvement cannot authorize a competition submission. This is TabICL, not the ineligible TabPFN3.5 full-context branch."
+  },
+  "round36": {
+    "round": 36,
+    "successful": true,
+    "cloud_all_branches_completed": true,
+    "unavailable_candidates": [],
+    "model_version": "TabPFN2.0",
+    "attribution": "Built with PriorLabs-TabPFN",
+    "training_context_rows": 20000,
+    "outer_training_rows": 559708,
+    "validation_rows": 139927,
+    "full_context_subsampled": true,
+    "baseline_auc": 0.9619423802731576,
+    "candidates": [
+      {
+        "candidate": "raw23",
+        "auc": 0.9547311693211753,
+        "blends": [
+          {
+            "weight": 0.025,
+            "auc": 0.9619344962149505,
+            "delta": -7.884058207063838e-06,
+            "paired_fixed_prediction": {
+              "delta": -7.884058207063838e-06,
+              "fixed_prediction_se": 7.502809072717975e-06,
+              "approx_95ci": [
+                -2.258956398959107e-05,
+                6.821447575463394e-06
+              ],
+              "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+            }
+          },
+          {
+            "weight": 0.05,
+            "auc": 0.9619185629678685,
+            "delta": -2.381730528910886e-05,
+            "paired_fixed_prediction": {
+              "delta": -2.381730528910886e-05,
+              "fixed_prediction_se": 1.5000367801765029e-05,
+              "approx_95ci": [
+                -5.321802618056831e-05,
+                5.5834156023505965e-06
+              ],
+              "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+            }
+          },
+          {
+            "weight": 0.1,
+            "auc": 0.9618609878221678,
+            "delta": -8.139245098981451e-05,
+            "paired_fixed_prediction": {
+              "delta": -8.139245098981451e-05,
+              "fixed_prediction_se": 3.0081224351195782e-05,
+              "approx_95ci": [
+                -0.00014035165071815824,
+                -2.2433251261470784e-05
+              ],
+              "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+            }
+          }
+        ],
+        "continue_full_folds": false
+      },
+      {
+        "candidate": "teacher40",
+        "auc": 0.9562333024803855,
+        "blends": [
+          {
+            "weight": 0.025,
+            "auc": 0.9619399026923464,
+            "delta": -2.47758081117766e-06,
+            "paired_fixed_prediction": {
+              "delta": -2.47758081117766e-06,
+              "fixed_prediction_se": 4.66067708225215e-06,
+              "approx_95ci": [
+                -1.1612507892391873e-05,
+                6.657346270036554e-06
+              ],
+              "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+            }
+          },
+          {
+            "weight": 0.05,
+            "auc": 0.9619333299537418,
+            "delta": -9.050319415782049e-06,
+            "paired_fixed_prediction": {
+              "delta": -9.050319415782049e-06,
+              "fixed_prediction_se": 9.362904523361413e-06,
+              "approx_95ci": [
+                -2.740161228157042e-05,
+                9.300973450006322e-06
+              ],
+              "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+            }
+          },
+          {
+            "weight": 0.1,
+            "auc": 0.9619081644951921,
+            "delta": -3.4215777965473926e-05,
+            "paired_fixed_prediction": {
+              "delta": -3.4215777965473926e-05,
+              "fixed_prediction_se": 1.8956702076092405e-05,
+              "approx_95ci": [
+                -7.137091403461505e-05,
+                2.9393581036671896e-06
+              ],
+              "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+            }
+          }
+        ],
+        "continue_full_folds": false
+      },
+      {
+        "candidate": "equal_probability_mean",
+        "auc": 0.9564648262303287,
+        "blends": [
+          {
+            "weight": 0.025,
+            "auc": 0.9619375745154727,
+            "delta": -4.805757684911427e-06,
+            "paired_fixed_prediction": {
+              "delta": -4.805757684911427e-06,
+              "fixed_prediction_se": 5.674432818595244e-06,
+              "approx_95ci": [
+                -1.5927646009358104e-05,
+                6.31613063953525e-06
+              ],
+              "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+            }
+          },
+          {
+            "weight": 0.05,
+            "auc": 0.9619267623884039,
+            "delta": -1.561788475368253e-05,
+            "paired_fixed_prediction": {
+              "delta": -1.561788475368253e-05,
+              "fixed_prediction_se": 1.1376206262114535e-05,
+              "approx_95ci": [
+                -3.791524902742702e-05,
+                6.679479520061955e-06
+              ],
+              "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+            }
+          },
+          {
+            "weight": 0.1,
+            "auc": 0.9618907380364559,
+            "delta": -5.164223670173218e-05,
+            "paired_fixed_prediction": {
+              "delta": -5.164223670173218e-05,
+              "fixed_prediction_se": 2.2884681558237873e-05,
+              "approx_95ci": [
+                -9.649621255587841e-05,
+                -6.788260847585953e-06
+              ],
+              "limitation": "Fixed prediction, independent case approximation. Adaptive OOF weight selection and dependence from overlapping training folds are not corrected."
+            }
+          }
+        ],
+        "continue_full_folds": false
+      }
+    ],
+    "resources": [
+      {
+        "branch": "raw23",
+        "fit_seconds": 15.356890824999994,
+        "total_seconds": 134.41674343199998,
+        "peak_allocated_vram_gb": 3.578665472,
+        "peak_reserved_vram_gb": 5.0331648
+      },
+      {
+        "branch": "teacher40",
+        "fit_seconds": 27.36550016800004,
+        "total_seconds": 243.74389142799998,
+        "peak_allocated_vram_gb": 6.377063936,
+        "peak_reserved_vram_gb": 8.984199168
+      }
+    ],
+    "continue_full_folds": false,
+    "cloud_total_seconds": 265.01111638300006,
+    "protocol_sha256": "554e105287bd5c0084299e2ebe68a6d5fa0e46e30f3f49bf82083ae51b8b9fc6",
+    "official_submission_attempted": false,
+    "limitation": "Historical adaptive first-fold screening. Context is stratified20000 subset, not full559708. TabPFN2.0 is not3.5. Single-fold gain cannot authorize submission."
+  },
+  "independent_auc_checks": [
+    {
+      "round": 32,
+      "passed": true,
+      "max_auc_reconstruction_error": 1.1102230246251565e-16,
+      "independent_method": "Mann-Whitney rank sum with ties and float64 accumulation",
+      "initial_check_precision_issue": "SciPy rankdata preserves float32; naive sum loses precision. Recheck uses float64 accumulation. Model predictions and sklearn scores were not changed.",
+      "frozen_acceptance": false,
+      "official_submission_attempted": false
+    },
+    {
+      "passed": true,
+      "round": 34,
+      "max_auc_error": 1.1102230246251565e-16,
+      "four_member_equal_mean_reconstructed": true,
+      "cached_power_arm_unchanged": true,
+      "continued_full_folds": false,
+      "official_submission_attempted": false
+    },
+    {
+      "passed": true,
+      "round": 36,
+      "all_fixed_candidates_reconstructed": true,
+      "method": "Float64 Mann-Whitney rank sum, with ties",
+      "max_auc_error": 1.1102230246251565e-16,
+      "continued_full_folds": false,
+      "official_submission_attempted": false
+    }
+  ],
+  "official_best_public_score": 0.96133,
+  "official_submission_count": 19,
+  "this_round_submission_attempted": false,
+  "raw_data_predictions_weights_account_files_exported": false
+}
